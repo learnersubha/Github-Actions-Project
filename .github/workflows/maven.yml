@@ -36,4 +36,4 @@ jobs:
        sudo apt-get update -y
        sudo apt-get install trivy -y
     - name: Trivy fs scan
-      run: trivy fs --format table -o fs-report.json 
+      run: trivy fs --format table -o fs-report.json .
