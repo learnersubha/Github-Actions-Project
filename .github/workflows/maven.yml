@@ -89,7 +89,7 @@ jobs:
      - name: Download JAR artifact
        uses: actions/Download-artifact@v4
        with:
-         name: jar-app
+         name: app-jar
          path: app
 
      - name: Login to Docker Hub
