@@ -58,7 +58,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: app-jar
-        path: target/*.jar  
+        path: build/libs/*.jar 
 
     - uses: actions/checkout@v4
       with:
@@ -105,5 +105,5 @@ jobs:
        uses: docker/build-push-action@v6
        with:
           push: true
-          tags: user/app:latest
+          tags: jar:latest
     
